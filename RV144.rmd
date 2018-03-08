@@ -69,13 +69,14 @@ rowPerc(results)
 <!--Display inferential evidence as to the effectiveness of the vaccine with explanations and interpretations!-->
 We now want to run a statisical test to see if the Aids vaccine was seemingly effective. We state the null and alternative hypothesis for this test.
 
-$H_o$ There's no relationship between getting Aids and having taken the Aids vaccine.
+$H_o:$ There's no relationship between getting Aids and having taken the Aids vaccine.
 
-$H_a$ There is a relationship between getting Aids and having taken the Aids vaccine.
+$H_a:$ There is a relationship between getting Aids and having taken the Aids vaccine.
 ```{r}
 chisqtestGC(results, graph = TRUE)
 ```
-
+  
+  The p-value of .04 means the probability of getting a result like that just obtained if the null hypothesis is true then the chance of getting this is aproximately 4%. This is normally considered significant.
 
 ## Conclusions
 
