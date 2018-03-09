@@ -52,7 +52,7 @@ rownames(results) <- c("none","aids")
 barchartGC(results,type = "percent")
 ```
 
-We would expect to see both graphs of eq size (50 % on each side) if the two are independent.
+We would expect to see both graphs of eq size (50 % on each side) if the two are independent. They do not appear to be equal ... sheddiing doubt on the idea of indepenence.
 
 ### Numerical Results
 
