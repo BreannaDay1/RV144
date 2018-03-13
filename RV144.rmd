@@ -97,8 +97,7 @@ myfisher <- fisher.test(results)
 myfisher
 ```
 
-The pvalue from the fisher test is `r myfisher$p.value` and the confidence interval is `r myfisher$conf.int`
-```
+The p.value from the fisher test is `r myfisher$p.value` and the confidence interval is `r myfisher$conf.int`.
 
 ## Conclusions
 
