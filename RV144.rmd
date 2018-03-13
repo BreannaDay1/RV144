@@ -73,10 +73,32 @@ $H_o:$ There's no relationship between getting Aids and having taken the Aids va
 
 $H_a:$ There is a relationship between getting Aids and having taken the Aids vaccine.
 ```{r}
-chisqtestGC(results, graph = TRUE)
+myrv144 <-chisqtestGC(results, graph = TRUE) 
+myrv144
 ```
   
-  The p-value of .04 means the probability of getting a result like that just obtained if the null hypothesis is true then the chance of getting this is aproximately 4%. This is normally considered significant.
+  
+  We now test the independence of aids vaccine and placebo groups.
+  
+$H_0:$ the placebo and aids vaccines treatment is independent of contracting the diesease.
+
+$H_a:$ Having the vaccine is related to contracting the disease. 
+  
+ The resulting interpretation is the following. If the null hypothesis is indeed true the results we just obtained would happen about `r myrv144$p.value` percent of the time.
+
+As a second approach we will consider the fisher exact test. We will state the null and alternate hypothesis for that test.
+
+$H_0:$ The odds ratio between having aids and getting the vaccine contains the number 1.
+
+$H_a:$ The odds ratio between having aids and getting the vaccine does not contain the number 1.
+
+```{r}
+myfisher <- fisher.test(results)
+myfisher
+```
+
+The pvalue from the fisher test is `r myfisher$p.value` and the confidence interval is `r myfisher$conf.int`
+```
 
 ## Conclusions
 
