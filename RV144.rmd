@@ -76,3 +76,4 @@ chisqtestGC(results, graph = TRUE)
 ## Conclusions
 
 <Summarise your results as to the effectiveness of the vaccine with explanations that could be understood by your mom>
+When we started to conduct the survey we see that those who took the placebo and aids vaccine had very low chance that they wouldn't get aids. Then we would conducted other test we seen that only 0.0482363 of the time the vaccine and placebo would work in combatting the virus. Thus, in this study we see that the placebo and vaccine didn't do exactly what we needed it to do.
