@@ -45,12 +45,19 @@ rownames(results) <- c("none","aids")
 
 ## Results
 <!-- You are to add descriptive comments to explain to the reader what the plot is showing !-->
+We now want to run a statisical test to see if the Aids vaccine was seemingly effective. We state the null and alternative hypothesis for this test.
+
+$H_o:$ There's no relationship between getting Aids and having taken the Aids vaccine.
+
+$H_a:$ There is a relationship between getting Aids and having taken the Aids vaccine.
 
 ### Graphical results
 <!--Display graphical evidence as to the effectiveness of the vaccine with explanations!-->
 ```{r}
 barchartGC(results,type = "percent")
 ```
+
+We would expect to see both graphs of eq size (50 % on each side) if the two are independent. They do not appear to be equal ... sheddiing doubt on the idea of indepenence.
 
 ### Numerical Results
 
